@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Biggest Challenge</title>
+    <style>
+      .grad-1 {
+        background-image: linear-gradient(pink, orange);
+      }
+      h1 {
+        color: rgb(59, 4, 22);
+        text-align: center;
+        font-family: "Courier New", Courier, monospace;
+        font-size: 45px;
+        padding: 20px;
+        background: rgb(179, 135, 135);
+        margin: 20px auto;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        border: 5px solid grey;
+        border-radius: 5px;
+      }
+      p {
+        text-align: center;
+      }
+      ul {
+        padding: 0;
+      }
+      li {
+        list-style: none;
+        text-align: center;
+        padding: 10px 0;
+        border-radius: 10px;
+        transition: all 200ms ease-in-out;
+        max-width: 300px;
+        margin: 0 auto;
+      }
+      li:hover {
+        background-color: #cca941;
+      }
+      button {
+        text-align: center;
+        color: #cb0f7a;
+        background: aliceblue;
+        padding: 10px 20px;
+        display: block;
+        margin: 0 auto;
+        border: 1px solid rgb(238, 13, 54);
+        border-radius: 20px;
+        transition: all 1s ease-in-out;
+      }
+      button:hover {
+        background: rgb(235, 214, 214);
+        color: rgb(118, 17, 120);
+        cursor: grab;
+      }
+      footer {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grad-1">
+      <h1>TRANSITIONING INTO TECH</h1>
+      <hr />
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzQPibbuHKOAbjLDxYeirt9FLIsdrbTWnkTd0oE12kHsxhzN8rhg7Tz1edaUTx1f0ylTg&usqp=CAU"
+        width="600"
+        alt="women coding"
+      />
+      <p>
+        My biggest achievement has been my transition into the tech world.I have
+        acquired new skills in software engineering, particularly by completing
+        multiple certificates in web development and React development. The
+        certificates include:
+      </p>
+      <ul>
+        <li>Introduction to coding</li>
+        <li>Web development</li>
+        <li>Responsive web development</li>
+        <li>React development</li>
+      </ul>
+      <p>
+        I was able to transition successfully by joining
+        <a href="http://shecodes.io" target="_blank">SheCodes Bootcamp</a> Give
+        it a try if you are interested in joining!!
+      </p>
+
+      <button>Join SheCodes</button>
+      <script>
+        function contactUs() {
+          let name = prompt("What is your name?");
+          let email = prompt("What is your email address?");
+
+          alert(
+            "Thank you " + name + ", Welcome to SheCodes!!, we'll be in touch!"
+          );
+        }
+
+        let contactButton = document.querySelector("button");
+
+        contactButton.addEventListener("click", contactUs);
+      </script>
+      <footer>Coded by Beatrice Gachau using html,css and javascript</footer>
+    </div>
+  </body>
+</html>
